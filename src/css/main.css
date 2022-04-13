@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@font-face {
+    font-family: Gagaline;
+    src: url(Gagalin-Regular.otf);
+}
+html,body{
+    padding:0;
+    overflow: hidden;
+}
+.back{
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.fira_sans{
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: 300;
+}
+.button_font{
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300;
+}
+.titleded{
+    font-family: 'Gagaline', sans-serif !important;
+    font-weight: 100;
+}
+.header{
+    margin-top: 80px;
+}
+.header h2,.header h3{
+    text-transform: uppercase;
+    font-family: 'Gagaline', sans-serif !important;
+    color:white;
+}
+.header h3{
+    font-size: 4vw;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+.header h2{
+    text-align: center;
+    font-size: 6vw;
+
+    font-weight: 1;
+}
+@media screen and (min-width: 400px) {
+    .header h3{
+        font-size: 3.2vw;
+    }
+    .header h2{
+        font-size: 5vw;
+    }
+}
+.balance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.balance_block{
+    background-size: 100% 100%;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.balance_block .count{
+    text-transform: uppercase;
+    font-family: 'Gagaline', sans-serif !important;
+    color:white;
+    letter-spacing: 5px;
+    font-size: 110%;
+    font-weight: 1;
+}
+.balance_block .plus{
+    text-transform: uppercase;
+    font-family: 'Gagaline', sans-serif !important;
+    color:white;
+    position: absolute;
+    transform: translate(16px,12px);
+    font-size: 200%;
+    font-weight: 1;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-height: 300px;
+}
+
+.text h3{
+    font-family: 'Caveat', cursive !important;
+    font-size: 15vw;
+    font-weight: 1;
+    text-align: center;
+    color:white;
+    margin-bottom: 0;
+    user-select: none !important;
+}
+.text h4{
+    font-family: 'Caveat', cursive !important;
+    font-size: 3.5vw;
+    text-align: center;
+    font-weight: 1;
+    text-transform: uppercase;
+    justify-self: end;
+    align-self: end;
+    margin-right: 10px;
+    color:white;
+    padding-top: 0;
+    user-select: none !important;
+
+}
+
+.but_open_new{
+    background-size: 100% 120%;
+    background-position: 0 -10px;
+    outline: 0;
+    border:0;
+    background-color: rgba(0,0,0,0);
+    color:white;
+    width: 60vw;
+    max-width: 200px !important;
+    align-self: center;
+    height: 120px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 1000;
+  font-size: 6vw;
+    margin-bottom: 40px;
+}
+@media screen and (min-width: 450px) {
+    .text h3{
+        font-size: 12vw;
+        margin-top: 0;
+    }
+    .text h4{
+        font-size: 2.5vw;
+    }
+    .but_open_new{
+        font-size: 5vw;
+    }
+}
+@media screen and (min-width: 520px) {
+    .text h3{
+        font-size: 10vw;
+        margin-top: 0;
+
+    }
+    .text h4{
+        font-size: 2vw;
+    }
+    .but_open_new{
+        font-size: 4vw;
+    }
+    .header{
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width: 620px) {
+    .text h3{
+        font-size: 9vw;
+    }
+    .text h4{
+        font-size: 2vw;
+    }
+    .header h3{
+        font-size: 3.5vw;
+    }
+    .header h2{
+        font-size: 4vw;
+    }
+}
+.text h3,text h4{
+    font-size: 210% !important;
+}
+.but_red{
+    background-color:#C94D5C !important;
+}
+.modal_text{
+    font-family: 'Gagaline', sans-serif !important;
+    font-weight: 100;
+}
+.danger_b span:nth-child(1){
+    color: #ff0000 !important;
+}
+.danger_b{
+    transform: scale(1.5);
+    animation: animDan forwards .5s;
+}
+@keyframes animDan {
+    from{
+        transform: scale(1) rotateZ(0deg);
+    }
+    15%{
+        transform: scale(1.1) rotateZ(50deg);
+    }
+    30%{
+        transform: scale(1.3) rotateZ(0deg);
+    }
+    45%{
+        transform: scale(1.4) rotateZ(-50deg);
+    }
+    60%{
+        transform: scale(1.5) rotateZ(0deg);
+    }
+    75%{
+        transform: scale(1.4) rotateZ(50deg);
+    }
+    90%{
+        transform: scale(1.3) rotateZ(0deg);
+    }
+    to{
+        transform: scale(1) rotateZ(0deg);
+    }
+}
